@@ -16,7 +16,7 @@
   <div class="container">
     <div class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <div role="navigation" aria-label="main" class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -24,7 +24,7 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      <img src="https://placekitten.com/1200/900" alt="cat" class="banner">
     </div>
     <div class="main-content">
       <h1>Welcome to Jam Box</h1>
@@ -46,15 +46,17 @@
           B3T 0L0
         </p>
       </div>
-      <div class="contact-section">
+      <div role="form" class="contact-section">
         <h1>Contact Us</h1>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label for="yourfullname">Full Name</label>
+          <input type="text" id="yourfullname" name="yourfullname" placeholder="Full Name">
+          <label for="youremail">Email</label>
+          <input type="text" id="youremail" name="youremail" placeholder="Email">
+          <label for="yoursubject">Subject</label>
+          <input type="text" id="yoursubject" name="yoursubject" placeholder="Subject">
+          <label for="yourmessage">Your Message</label>
+          <textarea id="yourmessage" name="yourmessage" placeholder="Message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
