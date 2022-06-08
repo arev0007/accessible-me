@@ -28,7 +28,7 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 15px;
   padding: 0;
 }
 
@@ -69,3 +69,20 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
+.skip-links a:focus{
+  top: 0;
+}
+
+.skip-links a{
+  color: black;
+}
+a:focus{
+  outline: 5px solid black;
+}
+
+
